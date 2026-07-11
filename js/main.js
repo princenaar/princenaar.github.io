@@ -1,132 +1,52 @@
 'use strict';
 
-// ─── AOS (Animate On Scroll) ───────────────────────────────────────────────
-AOS.init({
-  duration: 800,
-  easing: 'ease-in-out',
-  once: true
-});
+const header = document.querySelector('[data-header]');
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('#navigation');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-// ─── PureCounter ──────────────────────────────────────────────────────────
-new PureCounter();
+document.querySelectorAll('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
 
-// ─── Swiper (home carousel) ───────────────────────────────────────────────
-const homeSlider = document.querySelector('.home-slider');
-if (homeSlider) {
-  new Swiper('.home-slider', {
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    effect: 'fade',
-    fadeEffect: { crossFade: true },
-    pagination: {
-      el: '.home-slider .swiper-pagination',
-      clickable: true
-    }
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!open));
+    nav.classList.toggle('is-open', !open);
+    document.body.classList.toggle('menu-open', !open);
   });
+  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    toggle.setAttribute('aria-expanded', 'false'); nav.classList.remove('is-open'); document.body.classList.remove('menu-open');
+  }));
 }
 
-// ─── GLightbox ────────────────────────────────────────────────────────────
-if (typeof GLightbox !== 'undefined') {
-  GLightbox({ selector: '.glightbox' });
-  GLightbox({ selector: '.popup-youtube', type: 'video' });
+const onScroll = () => header && header.classList.toggle('is-scrolled', window.scrollY > 40);
+onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+
+const items = document.querySelectorAll('.reveal');
+if (reducedMotion || !('IntersectionObserver' in window)) items.forEach(el => el.classList.add('is-visible'));
+else {
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+  }), { threshold: .12 });
+  items.forEach(el => observer.observe(el));
 }
 
-// ─── Full-height hero elements ────────────────────────────────────────────
-function setFullHeight() {
-  document.querySelectorAll('.js-fullheight').forEach(function(el) {
-    el.style.height = window.innerHeight + 'px';
-  });
-}
-setFullHeight();
-window.addEventListener('resize', setFullHeight);
+document.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', event => {
+  const target = document.querySelector(link.getAttribute('href'));
+  if (target) { event.preventDefault(); target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth' }); }
+}));
 
-// ─── Page loader ──────────────────────────────────────────────────────────
-window.addEventListener('load', function() {
-  var loader = document.getElementById('ftco-loader');
-  if (loader) loader.classList.remove('show');
-});
-
-// ─── Navbar scroll behaviour (replaces jQuery Stellar + scroll) ───────────
-var navbar = document.querySelector('.ftco_navbar');
-window.addEventListener('scroll', function() {
-  var st = window.scrollY || window.pageYOffset;
-  if (!navbar) return;
-  if (st > 150) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled', 'sleep');
-  }
-  if (st > 350) {
-    navbar.classList.add('awake');
-    document.querySelectorAll('.js-scroll-wrap').forEach(function(el) {
-      el.classList.add('sleep');
-    });
-  } else {
-    if (navbar.classList.contains('awake')) {
-      navbar.classList.remove('awake');
-      navbar.classList.add('sleep');
-    }
-    document.querySelectorAll('.js-scroll-wrap').forEach(function(el) {
-      el.classList.remove('sleep');
-    });
-  }
-});
-
-// ─── Smooth one-page navigation ───────────────────────────────────────────
-document.querySelectorAll('#ftco-nav a[href^="#"]').forEach(function(link) {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    var target = document.querySelector(link.getAttribute('href'));
-    if (target) {
-      var offset = target.getBoundingClientRect().top + window.scrollY - 70;
-      window.scrollTo({ top: offset, behavior: 'smooth' });
-    }
-  });
-});
-
-// ─── Intersection Observer for .ftco-animate (replaces Waypoints) ─────────
-(function() {
-  var animItems = document.querySelectorAll('.ftco-animate');
-  if (!animItems.length) return;
-
-  var observer = new IntersectionObserver(function(entries) {
-    var stagger = 0;
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting && !entry.target.classList.contains('ftco-animated')) {
-        var el = entry.target;
-        var effect = el.dataset.animateEffect || 'fadeInUp';
-        var delay = stagger * 50;
-        stagger++;
-        setTimeout(function() {
-          el.classList.add(effect, 'ftco-animated');
-          el.style.visibility = 'visible';
-          el.style.opacity = '1';
-        }, delay);
-        observer.unobserve(el);
-      }
-    });
-  }, { threshold: 0.05 });
-
-  animItems.forEach(function(el) { observer.observe(el); });
-})();
-
-// ─── Dropdown hover (desktop) ─────────────────────────────────────────────
-document.querySelectorAll('nav .dropdown').forEach(function(dropdown) {
-  dropdown.addEventListener('mouseenter', function() {
-    this.classList.add('show');
-    var a = this.querySelector(':scope > a');
-    if (a) a.setAttribute('aria-expanded', 'true');
-    var menu = this.querySelector('.dropdown-menu');
-    if (menu) menu.classList.add('show');
-  });
-  dropdown.addEventListener('mouseleave', function() {
-    this.classList.remove('show');
-    var a = this.querySelector(':scope > a');
-    if (a) a.setAttribute('aria-expanded', 'false');
-    var menu = this.querySelector('.dropdown-menu');
-    if (menu) menu.classList.remove('show');
+document.querySelectorAll('[data-video]').forEach(container => {
+  const button = container.querySelector('button');
+  if (!button) return;
+  button.addEventListener('click', () => {
+    const id = container.dataset.video;
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?rel=0`;
+    iframe.title = 'Lancement de la plateforme e-DRHSanté';
+    iframe.allow = 'accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    iframe.allowFullscreen = true;
+    container.replaceChildren(iframe);
   });
 });
