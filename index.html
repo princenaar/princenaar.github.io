@@ -1,717 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <title>Cheikh Abdou Lahad Diagne</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- AOS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <!-- Animate.css -->
-    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
-    <!-- Swiper -->
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
-    <!-- GLightbox -->
-    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
-    <!-- Local: icon fonts + custom theme -->
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/custom.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cheikh Abdou Lahad Diagne — Santé numérique & systèmes d'information</title>
+  <meta name="description" content="Spécialiste en santé numérique et systèmes d'information sanitaire : iHRIS, DHIS2, HL7 FHIR, X-Road et ingénierie Java/Spring.">
+  <meta name="theme-color" content="#071b26">
+  <meta property="og:type" content="website"><meta property="og:locale" content="fr_SN">
+  <meta property="og:title" content="Cheikh Abdou Lahad Diagne — Santé numérique">
+  <meta property="og:description" content="Des systèmes d'information fiables au service des politiques publiques.">
+  <meta property="og:url" content="https://princenaar.github.io/"><meta property="og:image" content="https://princenaar.github.io/images/portrait-cheikh-diagne.webp">
+  <link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header" data-header>
+    <a class="brand" href="#accueil" aria-label="Retour à l'accueil"><span class="brand-mark"><img src="images/logo-cald-symbol.png" alt=""></span><strong>Cheikh Abdou Lahad Diagne</strong></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation"><span></span><span></span><span></span><b class="sr-only">Menu</b></button>
+    <nav id="navigation" aria-label="Navigation principale">
+      <a href="#expertise">Expertise</a><a href="#realisations">Réalisations</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
 
+  <main id="main">
+    <section class="hero" id="accueil">
+      <div class="hero-media" aria-hidden="true"></div><div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow hero-enter">Sénégal</p>
+        <h1 class="hero-enter">Cheikh Abdou<br>Lahad Diagne</h1>
+        <p class="hero-role hero-enter">Spécialiste en santé numérique & systèmes d’information sanitaire</p>
+        <p class="hero-intro hero-enter">Je transforme des besoins publics complexes en plateformes fiables, interopérables et réellement adoptées sur le terrain.</p>
+        <div class="hero-actions hero-enter"><a class="button button-primary" href="#realisations">Voir les réalisations</a><a class="button button-ghost" href="#contact">Me contacter</a></div>
+      </div>
+      <a class="scroll-cue" href="#impact"><span>Découvrir</span><i></i></a>
+    </section>
 
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">PrinceNaar</a>
-        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-bs-toggle="collapse"
-                data-bs-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-list"></i> Menu
-        </button>
+    <section class="impact section" id="impact" aria-labelledby="impact-title">
+      <div class="section-intro reveal"><p class="eyebrow">Impact</p><h2 id="impact-title">La technique au service de systèmes qui comptent.</h2></div>
+      <div class="metrics reveal">
+        <article><strong>Près de 10 ans</strong><span>de digitalisation des services publics</span></article>
+        <article><strong>25 000+</strong><span>agents de santé gérés dans iHRIS</span></article>
+        <article><strong>14 régions</strong><span>accompagnées dans le déploiement national</span></article>
+        <article><strong>2 distinctions</strong><span>en santé numérique en 2025</span></article>
+      </div>
+    </section>
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav nav ms-auto">
-                <li class="nav-item"><a href="#home-section" class="nav-link"><span>Accueil</span></a></li>
-                <li class="nav-item"><a href="#about-section" class="nav-link"><span>A propos</span></a></li>
-                <li class="nav-item"><a href="#resume-section" class="nav-link"><span>CV</span></a></li>
-                <li class="nav-item"><a href="#services-section" class="nav-link"><span>Expertise</span></a></li>
-                <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Compétences</span></a></li>
-                <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projets</span></a></li>
-                <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<section id="home-section" class="hero">
-    <div class="home-slider swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slider-item">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row d-md-flex g-0 slider-text align-items-end justify-content-end">
-                        <div class="one-third carousel-bg-img order-md-last img"
-                             style="background-image:url(images/bg_1.png);">
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="one-forth d-flex align-items-center ftco-animate">
-                            <div class="text">
-                                <span class="subheading">Bonjour!</span>
-                                <h1 class="mb-4 mt-3">Je m'appelle <span>Cheikh Abdou Lahad Diagne</span></h1>
-                                <h2 class="mb-4">Je suis ingénieur développeur</h2>
-                                <p><a href="#contact-section" class="btn btn-primary py-3 px-4">Contactez moi</a> <a
-                                        href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">Mon
-                                    travail</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="expertise section dark" id="expertise" aria-labelledby="expertise-title">
+      <div class="section-intro reveal"><p class="eyebrow">Expertise</p><h2 id="expertise-title">Relier stratégie publique, données de santé et ingénierie.</h2><p>De l’expression du besoin à la mise en production, avec la conduite du changement qui rend les outils durables.</p></div>
+      <div class="expertise-list">
+        <article class="reveal"><span>01</span><div><h3>Systèmes d’information sanitaire</h3><p>Administration iHRIS, DHIS2 Tracker & Mobile, qualité des données et outils d’aide à la décision.</p></div></article>
+        <article class="reveal"><span>02</span><div><h3>Interopérabilité & gouvernance</h3><p>HL7 FHIR, X-Road, PINS, GovStack et architecture d’entreprise gouvernementale.</p></div></article>
+        <article class="reveal"><span>03</span><div><h3>Ingénierie logicielle</h3><p>Java/Spring Boot, PHP/Laravel, API REST, PostgreSQL, Docker, Jenkins, Nginx et Linux.</p></div></article>
+        <article class="reveal"><span>04</span><div><h3>Pilotage & adoption</h3><p>Recueil des besoins, cahiers des charges, méthodes agiles, formation et coordination multi-acteurs.</p></div></article>
+      </div>
+      <div class="tech-line reveal" aria-label="Technologies principales"><span>iHRIS</span><span>DHIS2</span><span>HL7 FHIR</span><span>X-Road</span><span>Java / Spring</span><span>Docker</span></div>
+      <figure class="expertise-photo reveal"><img src="images/cheikh-coding.webp" alt="Cheikh Abdou Lahad Diagne travaillant sur un projet logiciel" loading="lazy"><figcaption>Concevoir, développer et accompagner l’adoption des solutions.</figcaption></figure>
+    </section>
 
-            <div class="swiper-slide slider-item">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row d-flex g-0 slider-text align-items-end justify-content-end">
-                        <div class="one-third carousel-bg-img order-md-last img"
-                             style="background-image:url(images/bg_2.png);">
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="one-forth d-flex align-items-center ftco-animate">
-                            <div class="text">
-                                <span class="subheading">Hello!</span>
-                                <h1 class="mb-4 mt-3">Je suis également <span>spécialiste</span></h1>
-                                <h2 class="mb-4">en Gestion des Programmes de Santé</h2>
-                                <p><a href="#contact-section" class="btn btn-primary py-3 px-4">Contactez moi</a> <a
-                                        href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">Mon
-                                    travail </a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
-</section>
+    <section class="work section" id="realisations" aria-labelledby="work-title">
+      <div class="section-intro reveal"><p class="eyebrow">Études de cas</p><h2 id="work-title">Des réalisations nationales, du terrain à la plateforme.</h2></div>
+      <div class="featured-work">
+        <a class="case case-large case-ihris reveal" href="gestion_personnel.html"><figure><img src="images/Formation-IHRIS.jpg" alt="Formation de points focaux au système iHRIS" loading="lazy"></figure><div class="case-copy"><p>MSHP · Depuis 2017</p><h3>iHRIS : administrer, déployer et faire évoluer le SIRH santé national</h3><span>25 000+ agents · 14 régions · migration v5 <b>↗</b></span></div></a>
+        <a class="case reveal" href="dematerialisation.html"><figure><img src="images/Mutation-App-1.png" alt="Interface de l'application MIRSAS" loading="lazy"></figure><div class="case-copy"><p>MSHP · Santé & RH</p><h3>MIRSAS et dématérialisation des procédures</h3><span>Conception, développement et déploiement <b>↗</b></span></div></a>
+        <a class="case reveal" href="covid.html"><figure><img src="images/AuthenticateDiploma.png" alt="Interface d'authentification sécurisée par QR code" loading="lazy"></figure><div class="case-copy"><p>Direction des Laboratoires · 2023</p><h3>Authentification nationale des tests COVID</h3><span>Chef de projet · Java/Spring Boot <b>↗</b></span></div></a>
+      </div>
+      <div class="project-index reveal">
+        <a href="documents.html"><span>Documents stratégiques & données RH</span><em>Stratégie · Indicateurs</em></a>
+        <a href="cour_dappel.html"><span>Résultats provisoires des législatives</span><em>Java · Secteur public</em></a>
+        <a href="prestatech.html"><span>E-banking & intégrations bancaires</span><em>Java · REST/SOAP</em></a>
+        <a href="others.html"><span>Autres solutions numériques</span><em>Cartographie · Web</em></a>
+      </div>
+    </section>
 
-<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    <div class="container">
-        <div class="row d-flex">
-            <div class="col-md-6 col-lg-5 d-flex">
-                <div class="img-about img d-flex align-items-stretch">
-                    <div class="overlay"></div>
-                    <div class="img d-flex align-self-stretch align-items-center"
-                         style="background-image:url(images/bg_1.png);">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-7 ps-lg-5 pb-5">
-                <div class="row justify-content-start pb-3">
-                    <div class="col-md-12 heading-section ftco-animate">
-                        <h1 class="big">A propos</h1>
-                        <h2 class="mb-4">A propos de moi</h2>
-                        <p>
-                            Ingénieur en développement logiciel, je suis actuellement en poste
-                            à la Direction des Ressources Humaines du Ministère de la Santé
-                            et de l'Action Sociale. J'ai également suivi un MBA en gestion des
-                            services de santé (option : Gestion des programmes de santé).
-                        </p>
-                        <ul class="about-info mt-4 px-md-0 px-2">
-                            <li class="d-flex"><span>Nom :</span> <span>Cheikh Abdou Lahad Diagne</span></li>
-                            <li class="d-flex"><span>Email :</span> <span>princenaar@gmail.com</span></li>
-                            <li class="d-flex"><span>Téléphone : </span> <span>+221 77 619 8908</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <section class="initiatives section" aria-labelledby="initiatives-title">
+      <div class="section-intro reveal"><p class="eyebrow">Projets récents</p><h2 id="initiatives-title">Interopérabilité et gouvernance numérique.</h2></div>
+      <div class="initiative-grid">
+        <article class="reveal"><p class="status done">Déployée</p><h3>PINS / X-Road</h3><p>Participation à la mise en place de la Plateforme d’Interopérabilité Nationale du Sénégal avec les acteurs institutionnels.</p></article>
+        <article class="reveal"><p class="status current">En cours</p><h3>Échange de données de santé</h3><p>Développement d’une plateforme d’interopérabilité entre DHIS2, iHRIS et ERP X3, fondée sur HL7/FHIR.</p></article>
+        <article class="reveal"><p class="status done">Mission réalisée</p><h3>Plateforme GouvNum</h3><p>Expert national mobilisé via GOPA pour la GIZ : cahier des charges de la plateforme nationale de gouvernance numérique.</p></article>
+        <article class="reveal"><p class="status done">Deux plateformes livrées</p><h3>Données de genre & SNEEG</h3><p>Pilotage de bout en bout de solutions distinctes et interopérables pour la coordination et le suivi-évaluation.</p></article>
+      </div>
+      <figure class="initiative-photo reveal"><img src="images/atelier-deeg.webp" alt="Présentation des plateformes de données de genre à la DEEG" loading="lazy"><figcaption>Présentation des plateformes de données de genre et de suivi-évaluation.</figcaption></figure>
+    </section>
 
-<section class="ftco-section ftco-no-pb" id="resume-section">
-    <div class="container">
-        <div class="row justify-content-center pb-5">
-            <div class="col-md-10 heading-section text-center ftco-animate">
-                <h1 class="big big-2">Curriculum</h1>
-                <h2 class="mb-4">Curriculum Vitae</h2>
-                <p>Ma formation et mes diverses expériences m'ont permis de développer une large palette de
-                    compétences.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">2017-2025</span>
-                    <h2>Ingénieur développeur</h2>
-                    <span class="position">Ministère de la Santé et de l'Action Sociale</span>
-                    <p class="mt-4 text-justify">
-                        Je suis chargé principalement de modéliser et de développer les applications dont
-                        la Direction a besoin. Je suis également administrateur de la base nationale de gestion
-                        des ressources humaines, iHRIS. J'ai participé en parallèle à la rédaction de plusieurs
-                        documents stratégiques.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">2025</span>
-                    <h2>Consultant</h2>
-                    <span class="position">Ministère de la Famille et des solidarités</span>
-                    <p class="mt-4 text-justify">
-                        J'ai été consultant dans le cadre de la conception et du développement d'une plateforme de
-                        collaboration entre la
-                        Direction de l'Equité et de l'Egalité du Genres et les autres acteurs de la Stratégie Nationale
-                        pour l'Equité et l'Egalité du Genre (SNEEG).
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">2023</span>
-                    <h2>Chef de projet</h2>
-                    <span class="position">Direction des Laboratoires / Essor Africa</span>
-                    <p class="mt-4 text-justify">
-                        J'étais à la tête de l'équipe chargée de la conception du logiciel national
-                        d'authentification des tests COVID. Parallèlement à la supervision du développement,
-                        je m'occupais des tests, du débogage et du déploiement de l'application ainsi que de la
-                        rédaction de tous les
-                        documents techniques.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">2016-2017</span>
-                    <h2>Ingénieur développeur</h2>
-                    <span class="position">Groupe Idyal S.A.</span>
-                    <p class="mt-4 text-justify">
-                        J'étais chargé, en collaboration avec mon équipe, de créer des applications en
-                        adéquation avec le cahier de charge défini par le client. Je m'occupais également de la
-                        définition de l'architecture technique et fonctionnelle sous la supervision du chef de
-                        projet.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">2015-2016</span>
-                    <h2>Stagiaire</h2>
-                    <span class="position">Prestatech S.A.</span>
-                    <p class="mt-4 text-justify">
-                        Dans le cadre de mon stage, j'étais chargé de programmer les applications et
-                        web-services sous la supervision de mon maître de stage. J'ai travaillé principalement sur du
-                        Java et C#
-                        pour les web-services et de l'Android natif pour les applications mobiles.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">2015</span>
-                    <h2>Stagiaire</h2>
-                    <span class="position">Kheweul.com</span>
-                    <p class="mt-4 text-justify">
-                        Kheweul est un registrar et hébergeur web. J'assistais les clients dans la
-                        configuration et la paramétrage de leurs serveurs web mais également sur le déploiement de leurs
-                        sites web. Je travaillais en parallèle sur des sites web statiques avec HTML et CSS.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">2025</span>
-                    <h2>DIU e-Santé "Innovations et Pratiques en santé en Afrique"</h2>
-                    <span class="position">DIGI S@NTE MALI</span>
-                    <p class="mt-4"></p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">2022-2023</span>
-                    <h2>MBA en Gestion des Services de Santé</h2>
-                    <span class="position">Centre Africain d'Etudes Supérieures en Gestion (CESAG)</span>
-                    <p class="mt-4"></p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">2014-2016</span>
-                    <h2>Master en génie logiciel</h2>
-                    <span class="position">Institut Supérieur d'Informatique<br>(ISI)</span>
-                    <p class="mt-4"></p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">2013-2014</span>
-                    <h2>Licence en génie informatique<br><br></h2>
-                    <span class="position">Université Dakar Bourguiba</span>
-                    <p class="mt-4"></p>
-                </div>
-            </div>
+    <section class="journey section dark" id="parcours" aria-labelledby="journey-title">
+      <div class="section-intro reveal"><p class="eyebrow">Parcours</p><h2 id="journey-title">Une double culture : logiciel et programmes de santé.</h2></div>
+      <div class="timeline">
+        <article class="reveal"><time>Depuis juin 2017</time><div><h3>MSHP — Direction des Ressources Humaines</h3><p>Chef de projet technique, ingénieur développeur et administrateur de systèmes nationaux de RH en santé.</p></div></article>
+        <article class="reveal"><time>2025</time><div><h3>GIZ / GOPA — Expert national</h3><p>Cahier des charges de la Plateforme GouvNum dans le cadre du projet Goin’ Digital financé par l’Union européenne.</p></div></article>
+        <article class="reveal"><time>2024 — 2025</time><div><h3>DEEG — Consultant full-stack</h3><p>Deux plateformes interopérables dédiées aux données de genre et au suivi-évaluation de la SNEEG.</p></div></article>
+        <article class="reveal"><time>2015 — 2017</time><div><h3>Idyal, Prestatech & Kheweul</h3><p>Premières expériences en Java, intégration bancaire, cartographie et hébergement web.</p></div></article>
+      </div>
+      <div class="education reveal"><h3>Formation & certifications</h3><ul><li><b>2026</b> Introduction to DHIS2 — HISP Centre, Université d’Oslo</li><li><b>2025</b> HL7 FHIR Fundamentals — HL7 International</li><li><b>2025</b> DIU en e-Santé — consortium Digi S@nté</li><li><b>2023</b> MBA en Gestion des Programmes de Santé — CESAG</li><li><b>2016</b> Master en Génie Logiciel — ISI</li></ul><img src="images/diu-esante.webp" alt="Remise d’une attestation du Hackathon E-Santé 2025" loading="lazy"></div>
+    </section>
 
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">2011-2013</span>
-                    <h2>Diplôme d'Etudes Universitaires Professionnalisées</h2>
-                    <span class="position">Université Dakar Bourguiba</span>
-                    <p class="mt-4"></p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">2010-2011</span>
-                    <h2>Baccalauréat S2 (Sciences Expérimentales)</h2>
-                    <span class="position">Lycée Blaise Diagne</span>
-                    <p class="mt-4"></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <section class="recognition section" id="reconnaissance" aria-labelledby="recognition-title">
+      <div class="section-intro reveal"><p class="eyebrow">Reconnaissance</p><h2 id="recognition-title">Partager, évaluer, accompagner.</h2></div>
+      <div class="recognition-grid reveal"><article><img src="images/hackathon-esante-2025.webp" alt="Cheikh Abdou Lahad Diagne avec le prix du Hackathon E-Santé 2025" loading="lazy"><strong>2025</strong><h3>Vainqueur du Hackathon DIU E-Santé</h3><p>Et prix de l’Observatoire de la E-Santé des pays du Sud.</p></article><article><img src="images/govathon-portrait.webp" alt="Cheikh Abdou Lahad Diagne lors du Gov’athon 2025" loading="lazy"><strong>2025</strong><h3>Jury du Gov’athon</h3><p>Membre du jury de présélection de projets d’innovation publique.</p></article><article><img src="images/govathon-jury.webp" alt="Intervention de Cheikh Abdou Lahad Diagne au Gov’athon 2025" loading="lazy"><strong>8 équipes</strong><h3>Mentorat</h3><p>Une équipe accompagnée a remporté le 2e prix national SENDON.</p></article></div>
+    </section>
 
-<section class="ftco-section" id="services-section">
-    <div class="container">
-        <div class="row justify-content-center py-5 mt-5">
-            <div class="col-md-12 heading-section text-center ftco-animate">
-                <h1 class="big big-2">Expertise</h1>
-                <h2 class="mb-4">Domaines d'expertise</h2>
-                <p>Quelques domaines dans lesquels je suis capable d'évoluer.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 text-center d-flex ftco-animate">
-                <a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-web-design"></i>
-							</span>
-                    <div class="desc">
-                        <h3 class="mb-5">Développement</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 text-center d-flex ftco-animate">
-                <a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-idea"></i>
-							</span>
-                    <div class="desc">
-                        <h3 class="mb-5">Conception de programmes</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 text-center d-flex ftco-animate">
-                <a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-ideas"></i>
-							</span>
-                    <div class="desc">
-                        <h3 class="mb-5">Base de données</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4 text-center d-flex ftco-animate">
-                <a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-innovation"></i>
-							</span>
-                    <div class="desc">
-                        <h3 class="mb-5">Gestion de projets</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 text-center d-flex ftco-animate">
-                <a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-flasks"></i>
-							</span>
-                    <div class="desc">
-                        <h3 class="mb-5">Suivi & évaluation</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 text-center d-flex ftco-animate">
-                <a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-analysis"></i>
-							</span>
-                    <div class="desc">
-                        <h3 class="mb-5">Système d'informations</h3>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="ftco-section" id="skills-section">
-    <div class="container">
-        <div class="row justify-content-center pb-5">
-            <div class="col-md-12 heading-section text-center ftco-animate">
-                <h1 class="big big-2">Compétences</h1>
-                <h2 class="mb-4">Mes compétences</h2>
-                <p>Mon éventail de compétences.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 animate-box">
-                <div class="progress-wrap ftco-animate">
-                    <h3>Modélisation de systèmes d'information</h3>
-                    <div class="progress">
-                        <div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-                             aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                            <span>90%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 animate-box">
-                <div class="progress-wrap ftco-animate">
-                    <h3>Statistiques et méthodes de gestion</h3>
-                    <div class="progress">
-                        <div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
-                             aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                            <span>80%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 animate-box">
-                <div class="progress-wrap ftco-animate">
-                    <h3>Gestion des Ressources Humaines</h3>
-                    <div class="progress">
-                        <div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
-                             aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                            <span>75%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 animate-box">
-                <div class="progress-wrap ftco-animate">
-                    <h3>Conception, suivi/évaluation de prog.</h3>
-                    <div class="progress">
-                        <div class="progress-bar color-4" role="progressbar" aria-valuenow="75"
-                             aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                            <span>75%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 animate-box">
-                <div class="progress-wrap ftco-animate">
-                    <h3>Bases de données</h3>
-                    <div class="progress">
-                        <div class="progress-bar color-5" role="progressbar" aria-valuenow="90"
-                             aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                            <span>90%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 animate-box">
-                <div class="progress-wrap ftco-animate">
-                    <h3>Test et automatisation de logiciels</h3>
-                    <div class="progress">
-                        <div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-                             aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                            <span>80%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 animate-box">
-                <div class="progress-wrap ftco-animate">
-                    <h3>Gestion de projets informatiques</h3>
-                    <div class="progress">
-                        <div class="progress-bar color-6" role="progressbar" aria-valuenow="90"
-                             aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                            <span>90%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 animate-box">
-                <div class="progress-wrap ftco-animate">
-                    <h3>Développement</h3>
-                    <div class="progress">
-                        <div class="progress-bar color-6" role="progressbar" aria-valuenow="90"
-                             aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                            <span>90%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="ftco-section ftco-project" id="projects-section">
-    <div class="container">
-        <div class="row justify-content-center pb-5">
-            <div class="col-md-12 heading-section text-center ftco-animate">
-                <h1 class="big big-2">Expérience</h1>
-                <h2 class="mb-4">Mes Expériences</h2>
-                <p>Quelques projets sur lesquels j'ai travaillé.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                     style="background-image: url(images/project-2.jpg);">
-                    <div class="overlay"></div>
-                    <div class="text text-center p-4">
-                        <h3><a href="dematerialisation.html">Dématérialisation des procédures</a></h3>
-                        <span>Ministère de la Santé et de l'Action Sociale</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                     style="background-image: url(images/project-5.jpg);">
-                    <div class="overlay"></div>
-                    <div class="text text-center p-4">
-                        <h3><a href="gestion_personnel.html">Gestion du personnel</a></h3>
-                        <span>Ministère de la Santé et de l'Action Sociale</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                     style="background-image: url(images/project-6.jpg);">
-                    <div class="overlay"></div>
-                    <div class="text text-center p-4">
-                        <h3><a href="documents.html">Rédaction de documents stratégiques</a></h3>
-                        <span>Ministère de la Santé et de l'Action Sociale</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                     style="background-image: url(images/project-7.png);">
-                    <div class="overlay"></div>
-                    <div class="text text-center p-4">
-                        <h3><a href="covid.html">Gestion des tests COVID</a></h3>
-                        <span>Direction des Laboratoires / Essor Africa</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-md-4">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                     style="background-image: url(images/project-1.jpg);">
-                    <div class="overlay"></div>
-                    <div class="text text-center p-4">
-                        <h3><a href="cour_dappel.html">Gestion des résultats provisoires des élections législatives</a>
-                        </h3>
-                        <span>Cour d'Appel de Dakar | Idyal S.A.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                     style="background-image: url(images/project-4.jpg);">
-                    <div class="overlay"></div>
-                    <div class="text text-center p-4">
-                        <h3><a href="prestatech.html">E-Banking</a></h3>
-                        <span>Prestatech S.A.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center"
-                     style="background-image: url(images/image_1.jpg);">
-                    <div class="overlay"></div>
-                    <div class="text text-center p-4">
-                        <h3><a href="others.html">Autres expériences</a></h3>
-                        <span>Kheweul.Com | Freelancing </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-    <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-            <div class="col-md-7 heading-section text-center ftco-animate">
-                <h1 class="big big-2">Contact</h1>
-                <h2 class="mb-4">Contactez Moi</h2>
-                <p>Pour tous services ou prestations, vous pouvez me joindre sur ces contacts.</p>
-            </div>
-        </div>
-
-        <div class="row d-flex contact-info mb-5">
-            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                <div class="align-self-stretch box p-4 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="icon-map-signs"></span>
-                    </div>
-                    <h3 class="mb-4">Adresse</h3>
-                    <p><a href="#">56 Scat Urbam 1, Dakar, Sénégal</a></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                <div class="align-self-stretch box p-4 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="icon-phone2"></span>
-                    </div>
-                    <h3 class="mb-4">Numéro de téléphone</h3>
-                    <p><a href="tel://+221776198908">+221 77 619 89 08</a></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                <div class="align-self-stretch box p-4 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="icon-paper-plane"></span>
-                    </div>
-                    <h3 class="mb-4">Adresse e-mail</h3>
-                    <p><a href="mailto:princenaar@gmail.com">princenaar@gmail.com</a></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                <div class="align-self-stretch box p-4 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="icon-globe"></span>
-                    </div>
-                    <h3 class="mb-4">Site Web</h3>
-                    <p><a href="https://princenaar.github.io">princenaar.github.io</a></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row g-0 block-9">
-            <div class="col-md-6 order-md-last d-flex">
-                <form action="#" class="bg-light p-4 p-md-5 contact-form">
-                    <div class="mb-3">
-                        <label for="nom" class="visually-hidden">Votre nom</label>
-                        <input type="text" name="nom" id="nom" class="form-control" placeholder="Votre nom">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="visually-hidden">Votre e-mail</label>
-                        <input type="text" name="email" id="email" class="form-control" placeholder="Votre e-mail">
-                    </div>
-                    <div class="mb-3">
-                        <label for="sujet" class="visually-hidden">Sujet</label>
-                        <input type="text" name="sujet" id="sujet" class="form-control" placeholder="Sujet">
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="visually-hidden">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="7" class="form-control"
-                                  placeholder="Message"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <input type="submit" disabled value="Envoyer" class="btn btn-primary py-3 px-5">
-                    </div>
-                </form>
-
-            </div>
-
-            <div class="col-md-6 d-flex">
-                <div class="img" style="background-image: url(images/about.png);"></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<footer class="ftco-footer ftco-section">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-md">
-                <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Remerciements</h2>
-                    <p>Merci d'avoir fait un tour sur mon site. Je reste à votre disposition à travers mes différents
-                        canaux de communication.</p>
-                    <ul class="ftco-footer-social list-unstyled float-md-start float-lft mt-5">
-                        <li class="ftco-animate"><a href="https://twitter.com/PrinceNaar"><span
-                                class="icon-twitter"></span></a></li>
-                        <li class="ftco-animate"><a href="https://www.facebook.com/princenaar.diagne"><span
-                                class="icon-facebook"></span></a></li>
-                        <li class="ftco-animate"><a href="https://www.instagram.com/princenaar/"><span
-                                class="icon-instagram"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="ftco-footer-widget mb-4 ms-md-4">
-                    <h2 class="ftco-heading-2">Liens</h2>
-                    <ul class="list-unstyled">
-                        <li><a href="#home-section"><span class="icon-long-arrow-right me-2"></span>Accueil</a></li>
-                        <li><a href="#about-section"><span class="icon-long-arrow-right me-2"></span>A propos</a></li>
-                        <li><a href="#resume-section"><span class="icon-long-arrow-right me-2"></span>CV</a></li>
-                        <li><a href="#services-section"><span class="icon-long-arrow-right me-2"></span>Expertise</a>
-                        </li>
-                        <li><a href="#skills-section"><span class="icon-long-arrow-right me-2"></span>Compétences</a>
-                        </li>
-                        <li><a href="#projects-section"><span class="icon-long-arrow-right me-2"></span>Projets</a></li>
-                        <li><a href="#contact-section"><span class="icon-long-arrow-right me-2"></span>Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md">
-                <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Des questions ?</h2>
-                    <div class="block-23 mb-3">
-                        <ul>
-                            <li><span class="icon icon-map-marker"></span><span class="text">56 Scat Urbam 1, Dakar, Sénégal</span>
-                            </li>
-                            <li><a href="#"><span class="icon icon-phone"></span><span
-                                    class="text">+221 77 619 89 08</span></a></li>
-                            <li><a href="#"><span class="icon icon-envelope"></span><span class="text">princenaar@gmail.com</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                    All rights reserved | Site réalisé par <a href="https://princenaar.github.io" target="_blank">Cheikh
-                        Abdou Lahad Diagne (@PrinceNaar)</a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-<!-- loader -->
-<div id="ftco-loader" class="show fullscreen">
-    <svg class="circular" width="48px" height="48px">
-        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
-        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-                stroke="#F96D00"/>
-    </svg>
-</div>
-
-
-<!-- Bootstrap 5 bundle (includes Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- AOS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<!-- Swiper -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<!-- GLightbox -->
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-<!-- PureCounter -->
-<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-<!-- Site scripts -->
-<script src="js/main.js"></script>
-
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-copy reveal"><p class="eyebrow">Contact</p><h2 id="contact-title">Construisons des systèmes publics qui durent.</h2><p>Disponible pour des missions en santé numérique, systèmes d’information et transformation numérique du secteur public.</p></div>
+      <div class="contact-links reveal"><a href="mailto:diagne.cal@gmail.com">diagne.cal@gmail.com <span>↗</span></a><a href="tel:+221776198908">+221 77 619 89 08 <span>↗</span></a><a href="https://www.linkedin.com/in/cheikh-abdou-lahad-diagne" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a><a href="https://github.com/princenaar" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a></div>
+    </section>
+  </main>
+  <footer><p>© <span data-year></span> Cheikh Abdou Lahad Diagne</p><p>Sénégal</p></footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
