@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://princenaar.github.io/sitemap.xml
