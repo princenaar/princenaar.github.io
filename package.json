@@ -1,0 +1,23 @@
+{
+  "name": "princenaar-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static bilingual portfolio for Cheikh Abdou Lahad Diagne",
+  "engines": {
+    "node": "^20.19.0 || ^22.16.0 || >=24.0.0"
+  },
+  "scripts": {
+    "setup:browsers": "playwright install chromium",
+    "check:html": "html-validate \"*.html\" \"en/*.html\"",
+    "check:site": "node scripts/check-site.mjs",
+    "check:static": "npm run check:html && npm run check:site",
+    "test:e2e": "playwright test",
+    "test": "npm run check:static && npm run test:e2e",
+    "audit": "npm audit"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1",
+    "html-validate": "10.17.0"
+  }
+}
